@@ -17,30 +17,27 @@
         <link href="css/aggiuntaStyle.css" rel="stylesheet" />
     </head>
     <body id="page-top">
-        <!-- Navigation
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" id="menu">
             <div class="container px-5">
                 <a class="navbar-brand" href="#page-top">Alessandro Margonari</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-
-                        <li class="nav-item"><a class="nav-link" href="#!">Sign Up</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Log In</a></li>
-                        
+                        <li class="nav-item"><a class="nav-link" href="index.html">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="experiences.html">Experiences</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        -->
+
         <!-- Header -->
         <header class="masthead text-center text-white">
             <div class="masthead-content">
                 <div class="container px-5">
                     <h1 class="masthead-heading mb-0">Alessandro Margonari</h1>
-                    <h2 class="masthead-subheading mb-0">- - - - - - Me - - - - - -</h2>
-                    <a class="btn btn-blue btn-xl rounded-pill mt-5" href="#scroll">About Me</a>
-                    <a class="btn btn-blue btn-xl rounded-pill mt-5" href="experiences.html">Experiences</a>
+                    <h2 class="masthead-subheading mb-0">- - - - - - About me - - - - - -</h2>
+                    <!--<a class="btn btn-blue btn-xl rounded-pill mt-5" href="#scroll">About Me</a>-->
                 </div>
             </div>
         </header>
@@ -50,13 +47,15 @@
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-2">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/profilo.png" alt="..." height="700" width="700"/></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/profilo.png" alt="..." height="500" width="500"/></div>
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
                             <h2 class="display-4">Chi sono</h2>
                             <p>
-                                Mi chiamo Alessandro, ho 18 anni e frequento il 5° anno dell’indirizzo informatico nell’Istituto Tecnico Tecnologico Buonarroti. Quando voglio fare qualcosa, a meno che non sia praticamente impossibile, la faccio. Un esempio? creare questo sito, esplorare nuovi territori, come il metatarso, e crearci delle mappe, oppure comprare delle criptovalute. Nel tempo libero mi piace giocare ai videogiochi, guardare film, la maggior parte d'azione. Mi interessano le armi e i veicoli in dotazione agli eserciti, questo mi a portato a conoscere diversi nomi e a riconoscere alcuni modelli quando li vedo in tv o sui giornali.                            <p>Contatti:</p>
+                                Mi chiamo Alessandro, ho 18 anni e frequento il 5° anno dell’indirizzo informatico nell’Istituto Tecnico Tecnologico Buonarroti. Quando voglio fare qualcosa, a meno che non sia praticamente impossibile, la faccio. Un esempio? creare questo sito, esplorare nuovi territori, come il metatarso, e crearci delle mappe, oppure comprare delle criptovalute. Nel tempo libero mi piace giocare ai videogiochi, guardare film, la maggior parte d'azione. Mi interessano le armi e i veicoli in dotazione agli eserciti, questo mi a portato a conoscere diversi nomi e a riconoscere alcuni modelli quando li vedo in tv o sui giornali.
+                            </p>                                
+                            <p>Contatti:</p>
                             <table class="table">
                                 <tr>
                                     <td>Instagram: </td><td><a href="https://www.instagram.com/alessandro_margonari/">alessandro_margonari</a></td><td><img src="assets/img/instagram.png" height="50" width="50"/></td>
@@ -80,9 +79,9 @@
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6">
                         <div class="p-5">
-                            <img class="img-fluid rounded-circle" id="myImg" src="assets/img/cv.pdf" alt=""/>
-                            <div id="myModal" class="modal">
-                                <span class="close">×</span>
+                            <img class="img-fluid rounded-2" id="myImg" src="assets/img/cv.pdf" alt=""/>
+                            <div id="myModal" class="modal" >
+                                <span class="close" style="margin-top: 40px; margin-right: 50px;" onclick="enableScroll()">×</span>
                                 <img class="modal-content" id="img01">
                                 <div id="caption"></div>
                               </div>
@@ -98,25 +97,33 @@
                 </div>
             </div>
         </section>
+
+        <section class="masthead text-center">
+            <div class="masthead-content">
+                <div class="container px-5">
+                    <h1 class="masthead-heading mb-2" style="font-size: 50px;">Altro</h1>
+                </div>
+            </div>
+        </section>
         
         <!--Giochi-->
         <section>
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-2">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/games.png" alt="..." height="700" width="700"/></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/games.png" alt="..." height="500" width="500"/></div>
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
                             <h2 class="display-4">Giochi</h2>
-                            <p>Informazioni sui giochi con cui passo il tempo</p>
+                            <p>Informazioni sui giochi con cui passo il tempo.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-1">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/warThunder.png" alt="..." width="186" height="186"/></div>
+                        <div class="p-5"><img class="img-fluid rounded-pill" src="assets/img/warThunder.png" alt="..." width="190" height="190"/></div>
                     </div>
                     <div class="col-lg-6 order-lg-2">
                         <div class="p-5">
@@ -129,7 +136,7 @@
                 
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-1">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/skin1.png" alt="..."  width="186" height="186"/></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/skin1.png" alt="..."  width="190" height="190"/></div>
                     </div>
                     <div class="col-lg-6 order-lg-2">
                         <div class="p-5">
@@ -142,15 +149,23 @@
                 
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-1">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/avatar.png" alt="..."  width="186" height="186"/></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/avatar.png" alt="..."  width="190" height="190"/></div>
                     </div>
                     <div class="col-lg-6 order-lg-2">
                         <div class="p-5">
                             <h2 class="display-6">The Sandbox</h2>
                             <p>Nickname: @<a href="https://www.sandbox.game/en/users/armax2003/68447826-55df-4c7c-ab05-7976cbb014ea/">Armax2003</a></p>
                             <p>The Sandbox è un mondo virtuale, dove gli utenti possono costruire, possedere e monetizzare la loro esperienza di gioco, grazie all'utilizzo della blockchain di Ethereum e al token della piattaforma $SAND.</p>
-                            <p>Terreni posseduti: 0</p>
-                            <p>Mappe create: 1 - Maze 1.0</p>
+                            <table class="table">
+                                <tr>
+                                    <td>Terreni posseduti:</td>
+                                    <td>Ciao 0</td>
+                                </tr>
+                                <tr>
+                                    <td>Mappe create:</td>
+                                    <td>Maze 1.0</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -159,17 +174,106 @@
 
         <!--Film-->
         <section>
-            <div class="row gx-5 align-items-center">
-                <div class="col-lg-6 order-lg-1">
-                    <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/film.png" alt="..."  width="500" height="500"/></div>
-                </div>
-                <div class="col-lg-6 order-lg-2">
-                    <div class="p-5">
-                        <h2 class="display-6">Film preferiti</h2>
-                        <p>Lista dei miei film preferiti</p>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/film.png" alt="..." height="500" width="500"/></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">Film preferiti</h2>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5"><img class="img-fluid" src="assets/imgFilm/pacificRim.png" alt="..."  width="190" height="190"/></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5">
+                            <h2 class="display-6">Pacific Rim</h2>
+                            <p>Genere: fantascienza, azione, avventura.</p>
+                            <p>Durata: 131 min.</p>
+                            <p>Anno: 2013.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5"><img class="img-fluid" src="assets/imgFilm/pacificRim2.png" alt="..."  width="190" height="190"/></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5">
+                            <h2 class="display-6">Pacific Rim - La rivolta</h2>
+                            <p>Genere: azione, fantascienza, avventura.</p>
+                            <p>Durata: 111 min.</p>
+                            <p>Anno: 2018.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5"><img class="img-fluid" src="assets/imgFilm/needForSpeed.png" alt="..."  width="190" height="190"/></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5">
+                            <h2 class="display-6">Need For Speed</h2>
+                            <p>Genere: azione, sportivo, thriller.</p>
+                            <p>Durata: 130 min.</p>
+                            <p>Anno: 2014.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5"><img class="img-fluid" src="assets/imgFilm/mortalEngines.png" alt="..."  width="190" height="190"/></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5">
+                            <h2 class="display-6">Mortal Engines (Macchine Mortali)</h2>
+                            <p>Genere: azione, fantascienza, fantastico, avventura, thriller.</p>
+                            <p>Durata: 128 min.</p>
+                            <p>Anno: 2018.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5"><img class="img-fluid" src="assets/imgFilm/jumper.png" alt="..."  width="190" height="190"/></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5">
+                            <h2 class="display-6">Jumper - Senza confini</h2>
+                            <p>Genere: azione, fantascienza.</p>
+                            <p>Durata: 88 min.</p>
+                            <p>Anno: 2008.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5"><img class="img-fluid" src="assets/imgFilm/sixUnderground.png" alt="..."  width="190" height="190"/></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5">
+                            <h2 class="display-6">6 Underground</h2>
+                            <p>Genere: avventura, azione, commedia, thriller.</p>
+                            <p>Durata: 128 min.</p>
+                            <p>Anno: 2019.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </section>
 
         <!-- Footer-->

@@ -1,11 +1,3 @@
-/*!
-* Start Bootstrap - One Page Wonder v6.0.5 (https://startbootstrap.com/theme/one-page-wonder)
-* Copyright 2013-2022 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-one-page-wonder/blob/master/LICENSE)
-*/
-// This file is intentionally blank
-// Use this file to add JavaScript to your project
-
 //CV
 // Get the modal
 var modal = document.getElementById('myModal');
@@ -14,7 +6,16 @@ var modal = document.getElementById('myModal');
 var img = document.getElementById('myImg');
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
+
+var nascMenu = document.getElementById("menu");
+
 img.onclick = function(){
+    //nascondi scroll
+    disableScroll();
+    //nascondi menu
+    nascMenu.style.top = "-100px";
+    nascMenu.style.transition = "all 1.5s";
+
     modal.style.display = "block";
     modalImg.src = this.src;
     modalImg.alt = this.alt;
@@ -25,6 +26,26 @@ img.onclick = function(){
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
+span.onclick = function() {
+    //attiva scroll
+    enableScroll();
+    //mostra menu
+    nascMenu.style.top = "0px";
+    
     modal.style.display = "none";
+}
+
+//disable/enable
+function disableScroll() {
+    // Get the current page scroll position
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+  
+        // if any scroll is attempted, set this to the previous value
+        window.onscroll = function() {
+            window.scrollTo(scrollLeft, scrollTop);
+        };
+}
+function enableScroll() {
+    window.onscroll = function() {};
 }
