@@ -49,3 +49,5 @@ function disableScroll() {
 function enableScroll() {
     window.onscroll = function() {};
 }
+
+//TRADUTTORE
