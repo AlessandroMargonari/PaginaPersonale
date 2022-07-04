@@ -49,3 +49,8 @@ function disableScroll() {
 function enableScroll() {
     window.onscroll = function() {};
 }
+
+//segnala un problema
+function segnala(){
+    
+}

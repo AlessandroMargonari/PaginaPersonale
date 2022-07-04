@@ -15,21 +15,6 @@
   border-color: #2e3ebb;
 }
 
-/*GRIGLIA PAGINA*/
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 0px;
-}
-
-.grid-item {
-  border: 0px solid rgba(0, 0, 0, 0.8);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-
 /*MODAL IMAGES*/
 #myImg {
   border-radius: 5px;
