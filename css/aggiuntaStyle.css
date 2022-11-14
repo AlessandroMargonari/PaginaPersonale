@@ -10,14 +10,15 @@
   line-height: 1.2;
 }
 
-.btn-blue {
-  color: #fff;
-  background-color: #4453c6;
-  margin: 1rem auto;
+.btn-blue{
+  color: white;
+  background-color: #0898ff;
+  padding: 15px;
+  max-width: 200px;
 }
 .btn-blue:hover {
-  color: #fff;
-  background-color: #2e3ebb;
+  color: white;
+  background-color: #52b6ff;
 }
 
 /*MODAL IMAGES*/
