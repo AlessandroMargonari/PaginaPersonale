@@ -1,0 +1,109 @@
+body{
+    margin: 0px;
+    font-family:'Times New Roman', Times, serif !important;
+}
+
+.header{
+    position: relative;
+    background-image: url("https://lh5.googleusercontent.com/p/AF1QipM5qmaUSC3NukImBTVj3OckuO4mXbCdZyEBmCQr=w426-h240-k-no");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100%;
+    padding: 20px;
+}
+
+.title{
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+}
+
+a{
+    color: brown;
+}
+
+h4{
+    margin: 0px;
+}
+
+.container{
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.titleSection{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.textSection{
+    margin-top: 20px;
+}
+
+.textSection ul {display: inline-block; text-align: left}
+
+li{
+    padding: 3px;
+}
+
+.contact{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.inline{
+    display: inline-block;
+}
+
+table{
+    margin-left:auto;
+    margin-right:auto;
+    width: 100px;
+}
+
+td{
+    text-align: center;
+    width: auto;
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+
+.myButton {
+	background-color:#deac47;
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:14px 20px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #000000;
+}
+.myButton:hover {
+	background-color:#a37925;
+}
+
+#map{
+    position: absolute;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.footer {
+    position: absolute;
+    height: 10%;
+    margin-top: 10px;
+    left: 0px;
+    right: 0px;
+    background-color: black;
+  }
+.textFooter {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}

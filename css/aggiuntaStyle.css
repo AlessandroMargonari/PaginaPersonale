@@ -13,12 +13,11 @@
 .btn-blue {
   color: #fff;
   background-color: #4453c6;
-  border-color: #4453c6;
+  margin: 1rem auto;
 }
 .btn-blue:hover {
   color: #fff;
   background-color: #2e3ebb;
-  border-color: #2e3ebb;
 }
 
 /*MODAL IMAGES*/

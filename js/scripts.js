@@ -11,13 +11,14 @@ var nascMenu = document.getElementById("menu");
 
 img.onclick = function(){
     //nascondi scroll
-    disableScroll();
+    document.body.style.overflow = "hidden";
+
     //nascondi menu
     nascMenu.style.top = "-100px";
     nascMenu.style.transition = "all 1.5s";
 
     modal.style.display = "block";
-    modalImg.src = this.src;
+    modalImg.src = "assets/img/cv1.png";
     modalImg.alt = this.alt;
     captionText.innerHTML = this.alt;
 }
@@ -28,29 +29,9 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     //attiva scroll
-    enableScroll();
+    document.body.style.overflow = "visible";
     //mostra menu
     nascMenu.style.top = "0px";
-    
+
     modal.style.display = "none";
-}
-
-//disable/enable
-function disableScroll() {
-    // Get the current page scroll position
-    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-  
-        // if any scroll is attempted, set this to the previous value
-        window.onscroll = function() {
-            window.scrollTo(scrollLeft, scrollTop);
-        };
-}
-function enableScroll() {
-    window.onscroll = function() {};
-}
-
-//segnala un problema
-function segnala(){
-    
 }
