@@ -35,3 +35,15 @@ span.onclick = function() {
 
     modal.style.display = "none";
 }
+
+var x = setInterval(function () {
+    var profile1 = document.getElementById("profile1");
+    var profile2 = document.getElementById("profile2");
+    if(profile1.style.visibility=="visible"){
+        profile1.style.visibility=="hidden";
+        profile2.style.visibility=="visible";
+    }else{
+        profile1.style.visibility=="visible";
+        profile2.style.visibility=="hidden";
+    }
+  }, 1000);
